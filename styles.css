@@ -1,1 +1,51 @@
-/*  your css code here. If applicable */
+/* Setting background color using :root pseudo-class */
+:root {
+    background-color: rgb(135, 206, 235);
+    font-family: Arial, sans-serif;
+}
+
+/* Paragraph styling */
+p:first-child {
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+p:nth-child(2) {
+    color: black;
+}
+
+p:last-child {
+    color: red;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Odd items have a white background */
+li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and last items should have a font size of 22px */
+li:first-child,
+li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item should have a pink background */
+li:nth-last-child(3) {
+    background-color: pink;
+}
+
